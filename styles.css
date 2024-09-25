@@ -23,7 +23,6 @@ a:hover {
     color: #0056b3;
 }
 
-.inline {
-    display: inline; /* Affiche les éléments sur la même ligne */
-    margin-right: 10px; /* Espace entre les éléments */
+div {
+    margin-bottom: 5px; /* Ajuste l'espacement entre les éléments */
 }
