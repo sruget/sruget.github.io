@@ -11,7 +11,7 @@ header, footer {
 
 /* Set color of url */
 a {
-    color: #4A90E2; /* Bleu */
+    color: #007bff; /* Bleu */
     text-decoration: none; /* Enlève le soulignement, si tu le souhaites */
 }
 
