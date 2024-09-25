@@ -1,7 +1,16 @@
-/* Set the back color (black) and the text color (white)*/
 body {
+    /* Set the back color (black) and the text color (white)*/
     background-color: #000000;
     color: #ffffff;
+    
+    /* Add margin and center the text */
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    background-color: #000000; /* Ton fond noir */
+    color: #ffffff; /* Texte blanc */
+    font-family: 'Arial', sans-serif; /* Tu peux changer la police ici */
+    font-size: 18px; /* Taille du texte */
 }
 
 header, footer {
@@ -18,14 +27,4 @@ a {
 /* Underline url */
 a:hover {
     color: #0056b3;
-}
-/* Add margin and center the text */
-body {
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: center;
-    background-color: #000000; /* Ton fond noir */
-    color: #ffffff; /* Texte blanc */
-    font-family: 'Arial', sans-serif; /* Tu peux changer la police ici */
-    font-size: 18px; /* Taille du texte */
 }
