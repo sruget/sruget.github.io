@@ -8,3 +8,14 @@ header, footer {
     background-color: #000000;
     color: #ffffff;
 }
+
+/* Set color of url */
+a {
+    color: #0000ff; /* Bleu */
+    text-decoration: none; /* Enlève le soulignement, si tu le souhaites */
+}
+
+/* Underline url */
+a:hover {
+    text-decoration: underline;
+}
