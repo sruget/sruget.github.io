@@ -6,7 +6,7 @@ body {
     /* Add margin and center the text */
     margin-left: 15%;
     margin-right: 15%;
-    text-align: center;
+    /*text-align: center;*/
     background-color: #000000; /* Ton fond noir */
     color: #ffffff; /* Texte blanc */
     font-family: 'Arial', sans-serif; /* Tu peux changer la police ici */
