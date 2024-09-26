@@ -30,8 +30,8 @@ div {
 /* Image */
 .text-image-section {
     padding: 0px; /* Adjust padding */
-    max-width: 1000px;
-    margin: auto;
+    /*max-width: 1000px;
+    margin: auto;*/
 }
 
 h2 {
