@@ -31,7 +31,7 @@ div {
 .text-image-section {
     padding: 20px;
     max-width: 1000px;
-    /*margin: auto;*/
+    margin: auto;
 }
 
 h2 {
@@ -41,7 +41,7 @@ h2 {
 
 .text-image {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-between;
 }
 
