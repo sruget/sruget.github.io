@@ -26,3 +26,24 @@ a:hover {
 div {
     margin-bottom: 5px; /* Ajuste l'espacement entre les éléments */
 }
+
+/* Image */
+.text-image {
+    display: flex; /* Utiliser Flexbox pour aligner le texte et l'image */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    justify-content: space-between; /* Assure que le texte soit à gauche et l'image à droite */
+    padding: 20px;
+    max-width: 1000px; /* Limite la largeur totale de la section */
+    margin: auto; /* Centre la section sur la page */
+}
+
+.texte {
+    flex: 1; /* Le texte occupe l'espace disponible à gauche */
+    margin-right: 20px; /* Espace entre le texte et l'image */
+}
+
+.image img {
+    max-width: 200px; /* Taille de l'image (peut être ajustée) */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 10px; /* Optionnel : arrondit les coins de l'image */
+}
