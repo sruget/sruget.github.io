@@ -92,3 +92,14 @@ h2 {
     transform: scale(1.1); /* Agrandit légèrement l'image au survol */
 }
 
+.icon-wrapper {
+    display: inline-block; /* Pour que les dimensions soient prises en compte */
+    background-color: white; /* Couleur de fond blanche */
+    border-radius: 50%; /* Pour donner une forme ronde, si souhaité */
+    padding: 5px; /* Ajuster l'espacement autour de l'icône */
+    transition: background-color 0.3s ease; /* Animation pour le changement de couleur */
+}
+
+.icon-wrapper:hover {
+    background-color: #f0f0f0; /* Changement de couleur au survol, par exemple un gris clair */
+}
