@@ -14,8 +14,8 @@ header, footer {
 
 /* Set color of url */
 a {
-    color: #007bff; /* Bleu */
-    text-decoration: none; /* Enlève le soulignement, si tu le souhaites */
+    color: #007bff; /* Blue */
+    text-decoration: none; 
 }
 
 /* Underline url */
@@ -24,25 +24,27 @@ a:hover {
 }
 
 div {
-    margin-bottom: 5px; /* Ajuste l'espacement entre les éléments */
+    margin-bottom: 5px; /* Adjust space between element */
 }
 
 /* Image */
 .text-image-section {
-    padding: 20px;
+    padding: 0px 20px; /* Adjust padding */
     max-width: 1000px;
     margin: auto;
 }
 
 h2 {
-    text-align: center; /* Centre le titre (facultatif) */
-    margin-bottom: 20px; /* Ajoute de l'espace entre le titre et le contenu */
+    /*  text-align: center; */
+    margin-bottom: 20px; /* Add space between title and text */
 }
 
 .text-image {
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: space-between;
+    padding-left: 0px; 
+
 }
 
 .texte {
