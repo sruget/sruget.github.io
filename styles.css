@@ -7,9 +7,17 @@ body {
     font-size: 18px;
 }
 
-header, footer {
+header {
     background-color: #000000;
     color: #ffffff;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 section {
