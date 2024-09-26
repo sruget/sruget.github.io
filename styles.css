@@ -13,11 +13,14 @@ header, footer {
 }
 
 section {
-    padding: 0px; /* Ajuste les marges intérieures à gauche et à droite pour toutes les sections */
-    margin: 0 auto; /* Centre les sections */
-    max-width: 1000px; /* Largeur maximale uniforme pour toutes les sections */
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
+p {
+    text-align: justify; /* Justify paragraphs */
+}
 /* Set color of url */
 a {
     color: #007bff; /* Blue */
@@ -37,7 +40,7 @@ div {
 .text-image-section {
     padding: 0px; /* Adjust padding */
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 h2 {
