@@ -12,21 +12,38 @@
 </head>
 <body>
     <header>
+        <div class="language-switcher">
+            <a href="#" onclick="setLanguage('fr'); return false;" id="lang-fr-btn">fr</a>
+            <span>|</span>
+            <a href="#" onclick="setLanguage('en'); return false;" id="lang-en-btn">en</a>
+        </div>
         <h1>Webpage of Simon Ruget</h1>
     </header>
 
     <main>
         <section class="text-image-section">
-            <h2>About me</h2>
+            <h2 class="lang-en">About me</h2>
+            <h2 class="lang-fr">À propos de moi</h2>
             <div class="text-image">
-                <div class="texte">            
-                <p>I am an engineer from the <a href="https://ecoledesponts.fr/" target="_blank">École des Ponts ParisTech</a>. I am currently working as a PhD student at <a href="https://inria.fr/fr" target="_blank">Inria</a> Paris, 
-                affiliated with the <a href="https://team.inria.fr/matherials/" target="_blank">MATHERIALS</a> team, and at École des Ponts ParisTech in the <a href="https://cermics-lab.enpc.fr/" target="_blank">CERMICS</a> laboratory. My PhD advisors 
-                are <a href="https://cermics.enpc.fr/~lebris/" target="_blank">Claude Le Bris</a> and <a href="http://cermics.enpc.fr/~legoll/" target="_blank">Frédéric Legoll</a>. My research is founded by the <a href="https://sciencesmaths-paris.fr/" target="_blank">FSMP</a>.</p>
+                <div class="texte">
+                    <div class="lang-en">
+                        <p>I am an engineer from the <a href="https://ecoledesponts.fr/" target="_blank">École des Ponts ParisTech</a>. I am currently working as a PhD student at <a href="https://inria.fr/fr" target="_blank">Inria</a> Paris,
+                        affiliated with the <a href="https://team.inria.fr/matherials/" target="_blank">MATHERIALS</a> team, and at École des Ponts ParisTech in the <a href="https://cermics-lab.enpc.fr/" target="_blank">CERMICS</a> laboratory. My PhD advisors
+                        are <a href="https://cermics.enpc.fr/~lebris/" target="_blank">Claude Le Bris</a> and <a href="http://cermics.enpc.fr/~legoll/" target="_blank">Frédéric Legoll</a>. My research is founded by the <a href="https://sciencesmaths-paris.fr/" target="_blank">FSMP</a>.</p>
 
-                <p>You can download my CV <a href="data/cvenglish.pdf" target="_blank">here</a> (english) or <a href="data/cvfrench.pdf" target="_blank">here</a> (french).</p>
+                        <p>You can download my CV <a href="data/cvenglish.pdf" target="_blank">here</a> (english) or <a href="data/cvfrench.pdf" target="_blank">here</a> (french).</p>
 
-                <p>You can contact me at <em>[name].[surname]@enpc.fr</em>.</p>
+                        <p>You can contact me at <em>[name].[surname]@enpc.fr</em>.</p>
+                    </div>
+                    <div class="lang-fr">
+                        <p>Je suis ingénieur de l'<a href="https://ecoledesponts.fr/" target="_blank">École des Ponts ParisTech</a>. Je travaille actuellement en tant que doctorant à <a href="https://inria.fr/fr" target="_blank">Inria</a> Paris,
+                        affilié à l'équipe <a href="https://team.inria.fr/matherials/" target="_blank">MATHERIALS</a>, et à l'École des Ponts ParisTech dans le laboratoire <a href="https://cermics-lab.enpc.fr/" target="_blank">CERMICS</a>. Mes directeurs de thèse
+                        sont <a href="https://cermics.enpc.fr/~lebris/" target="_blank">Claude Le Bris</a> et <a href="http://cermics.enpc.fr/~legoll/" target="_blank">Frédéric Legoll</a>. Ma recherche est financée par la <a href="https://sciencesmaths-paris.fr/" target="_blank">FSMP</a>.</p>
+
+                        <p>Vous pouvez télécharger mon CV <a href="data/cvenglish.pdf" target="_blank">ici</a> (anglais) ou <a href="data/cvfrench.pdf" target="_blank">ici</a> (français).</p>
+
+                        <p>Vous pouvez me contacter à <em>[nom].[prénom]@enpc.fr</em>.</p>
+                    </div>
             </div>
             <div class="image">
                 <img src="./data/simon.jpeg" alt="Mon image">
@@ -35,20 +52,40 @@
         </section>
         
         <section>
-            <h2>Research Activities</h2>
-             <div>I am particularly interested in developping new mathematical tools to better understand and/or simulate physical systems.</div>
-             <div>My PhD works are at the crossroads of Homogenization Theory and Inverse Problem. More precisely, Claude Le Bris, Frédéric Legoll and I are developping strategies based on Homogenization Theory to reconstruct the effective properties associated to a multiscale PDE based on measurement of their solutions. It finds applications e.g. in Mechanics (see composite materials).</div> 
-             <div>During my internship at <a href="https://www.edf.fr/en" target="_blank">EDF</a> Lab Chatou, Martin Ferrand, Jean-Marc Hérard, Thomas Norddine and I developped new numerical schemes to simulate turbulent incompressible flows.</div>
-             <div>During my internship at <a href="https://www.cea.fr/" target="_blank">CEA</a> Grenoble, Ivan Duchemin, Luigi Genovese, Éloïse Letournel, Antoine Levitt, and I developped a new method to compute the eigenvalues of a Schrödinger operator. </div>
-            
-            <p> </p>
-            <p>Here is a list of my publications:</p>
-            <div>[3] C. Le Bris, F. Legoll, S. Ruget, Effective approximation of multiscale PDE based on coarse measurements, in preparation.</div>
-            <div>[2] M. Ferrand, J.-M. Hérard, T. Norddine, S. Ruget, Stable schemes for second-moment turbulent models for incompressible flows, Comptes Rendus. Mécanique, 2023, DOI: https://doi.org/<a href="https://doi.org/10.5802/crmeca.202" target="_blank">10.5802/crmeca.202</a>.</div>
-            <div>[1] I. Duchemin, L. Genovese, E. Letournel, A. Levitt, S. Ruget, Efficient extraction of resonant states in systems with defects, Journal of Computational Physics, 2023, DOI: https://doi.org/<a href="https://doi.org/10.1016/j.jcp.2023.111928" target="_blank">10.1016/j.jcp.2023.111928</a>.</div>
+            <h2 class="lang-en">Research Activities</h2>
+            <h2 class="lang-fr">Activités de recherche</h2>
 
-            <p> </p>
-            <p>Here is a list of the conferences I attended:</p>
+            <div class="lang-en">
+                <div>I am particularly interested in developping new mathematical tools to better understand and/or simulate physical systems.</div>
+                <div>My PhD works are at the crossroads of Homogenization Theory and Inverse Problem. More precisely, Claude Le Bris, Frédéric Legoll and I are developping strategies based on Homogenization Theory to reconstruct the effective properties associated to a multiscale PDE based on measurement of their solutions. It finds applications e.g. in Mechanics (see composite materials).</div>
+                <div>During my internship at <a href="https://www.edf.fr/en" target="_blank">EDF</a> Lab Chatou, Martin Ferrand, Jean-Marc Hérard, Thomas Norddine and I developped new numerical schemes to simulate turbulent incompressible flows.</div>
+                <div>During my internship at <a href="https://www.cea.fr/" target="_blank">CEA</a> Grenoble, Ivan Duchemin, Luigi Genovese, Éloïse Letournel, Antoine Levitt, and I developped a new method to compute the eigenvalues of a Schrödinger operator. </div>
+
+                <p> </p>
+                <p>Here is a list of my publications:</p>
+                <div>[3] C. Le Bris, F. Legoll, S. Ruget, Effective approximation of multiscale PDE based on coarse measurements, in preparation.</div>
+                <div>[2] M. Ferrand, J.-M. Hérard, T. Norddine, S. Ruget, Stable schemes for second-moment turbulent models for incompressible flows, Comptes Rendus. Mécanique, 2023, DOI: https://doi.org/<a href="https://doi.org/10.5802/crmeca.202" target="_blank">10.5802/crmeca.202</a>.</div>
+                <div>[1] I. Duchemin, L. Genovese, E. Letournel, A. Levitt, S. Ruget, Efficient extraction of resonant states in systems with defects, Journal of Computational Physics, 2023, DOI: https://doi.org/<a href="https://doi.org/10.1016/j.jcp.2023.111928" target="_blank">10.1016/j.jcp.2023.111928</a>.</div>
+
+                <p> </p>
+                <p>Here is a list of the conferences I attended:</p>
+            </div>
+
+            <div class="lang-fr">
+                <div>Je suis particulièrement intéressé par le développement de nouveaux outils mathématiques pour mieux comprendre et/ou simuler des systèmes physiques.</div>
+                <div>Mes travaux de thèse se situent au carrefour de la théorie de l'homogénéisation et des problèmes inverses. Plus précisément, Claude Le Bris, Frédéric Legoll et moi développons des stratégies basées sur la théorie de l'homogénéisation pour reconstruire les propriétés effectives associées à une EDP multi-échelle à partir de mesures de leurs solutions. Cela trouve des applications notamment en mécanique (voir matériaux composites).</div>
+                <div>Lors de mon stage au laboratoire <a href="https://www.edf.fr/en" target="_blank">EDF</a> de Chatou, Martin Ferrand, Jean-Marc Hérard, Thomas Norddine et moi avons développé de nouveaux schémas numériques pour simuler des écoulements turbulents incompressibles.</div>
+                <div>Lors de mon stage au <a href="https://www.cea.fr/" target="_blank">CEA</a> de Grenoble, Ivan Duchemin, Luigi Genovese, Éloïse Letournel, Antoine Levitt et moi avons développé une nouvelle méthode pour calculer les valeurs propres d'un opérateur de Schrödinger.</div>
+
+                <p> </p>
+                <p>Voici une liste de mes publications :</p>
+                <div>[3] C. Le Bris, F. Legoll, S. Ruget, Effective approximation of multiscale PDE based on coarse measurements, en préparation.</div>
+                <div>[2] M. Ferrand, J.-M. Hérard, T. Norddine, S. Ruget, Stable schemes for second-moment turbulent models for incompressible flows, Comptes Rendus. Mécanique, 2023, DOI: https://doi.org/<a href="https://doi.org/10.5802/crmeca.202" target="_blank">10.5802/crmeca.202</a>.</div>
+                <div>[1] I. Duchemin, L. Genovese, E. Letournel, A. Levitt, S. Ruget, Efficient extraction of resonant states in systems with defects, Journal of Computational Physics, 2023, DOI: https://doi.org/<a href="https://doi.org/10.1016/j.jcp.2023.111928" target="_blank">10.1016/j.jcp.2023.111928</a>.</div>
+
+                <p> </p>
+                <p>Voici une liste des conférences auxquelles j'ai participé :</p>
+            </div>
             <div><a href="https://smai2025.math.cnrs.fr/fr/" target="_blank">[SMAI25]</a> 12ème Biennale Française des Mathématiques Appliquées et Industrielles, SMAI, June 2nd 2025 - June 6th 2025, Carcans Maubuisson, France, <a href="data/slides_SMAI25_Ruget.pdf" target="_blank">slides</a>.</div>
             <div><a href="https://www.imsi.institute/activities/reduced-order-modeling-for-complex-engineering-problems-from-analysis-to-practical-implementation/" target="_blank">[ROMCEP25]</a> Reduced-Order Modeling for Complex Engineering Problems From Analysis to Practical Implementation, IMSI Insitute, January 29th 2025 - February 7th 2025, Chicago, United States, <a href="data/poster_ROMCEP25_Ruget.pdf" target="_blank">poster</a>, <a href="data/slides_ROMCEP25_Ruget.pdf" target="_blank">slides</a>.</div>
             <div><a href="https://eccomas2024.org/" target="_blank">[ECCOMAS24]</a> 9th European Congress on Computational Methods in Applied Sciences and Engineering, ECCOMAS, June 3rd 2024 - June 7th 2024, Lisbon, Portugal<!--, <a href="data/slides_ECCOMAS24_Ruget.pdf" target="_blank">slides</a>-->.</div>
@@ -57,9 +94,10 @@
             <div><a href="https://forumbxl2023.sciencesconf.org/" target="_blank">[FJM23]</a> Forum des Jeunes Mathématicien et Mathématiciennes, Association Femmes et Mathématiques, November 22nd 2023 - November 24th 2023, Bruxelles, Belgium<!--, <a href="data/slides_FJM23_Ruget.pdf" target="_blank">slides</a>-->.</div>
             <div><a href="https://cjcma2023.sciencesconf.org/" target="_blank">[CJCMA23]</a> Congrès des Jeunes Chercheurs en Mathématiques et Applications, SMAI, September 25th 2023 - September 27th 2023, Gif-sur-Yvette, France, <a href="data/poster_CJCMA23_Ruget.pdf" target="_blank">poster</a>.</div>
             <div><a href="https://www.siam.org/conferences-events/past-event-archive/cse23/" target="_blank">[CSE23]</a> Conferences on Computational Science and Engineering (CSE23), SIAM, Februar 27th 2023 - March 3rd 2023, Amsterdam, Netherlands.</div>
-            
+
             <p> </p>
-            <p>Here is the list of journals for which I have done review of research articles:</p>
+            <p class="lang-en">Here is the list of journals for which I have done review of research articles:</p>
+            <p class="lang-fr">Voici la liste des revues pour lesquelles j'ai effectué des relectures d'articles de recherche :</p>
             <div>Springer,  <a href="https://link.springer.com/journal/205" target="_blank">Archive for Rational Mechanics and Analysis</a>.</div>
             <div>SIAM,  <a href="https://www.siam.org/publications/siam-journals/siam-journal-on-numerical-analysis/" target="_blank"> SIAM Journal on Numerical Analysis</a>.</div>
             
@@ -67,16 +105,30 @@
         </section>
 
         <section>
-            <h2>Teaching Activities</h2>
+            <h2 class="lang-en">Teaching Activities</h2>
+            <h2 class="lang-fr">Activités d'enseignement</h2>
 
-            <p>I am also a teaching assistant at École des Ponts ParisTech. I have given the following courses:</p>
-            <div>[-] Analysis of Partial Differential Equations , 34h, 24 students (first year ENPC), <a href="https://gede.enpc.fr/programme/Fiche.aspx?param=M:1ANCS" target="_blank">webpage</a>. This course introduces several theoretical tools (such as Banach spaces, Hilbert spaces, Lebesgue spaces, Notion of Measure Theory, Fourier Analysis, Fourier Transform, Notion of Distribution Theory, ...) to handle PDE.</div>
-            <div>[-] Partial Differential Equations: Variational and Energetical Approaches, 15h, 25 students (first year ENPC), <a href="http://cermics.enpc.fr/~legoll/edpef.html" target="_blank">webpage</a>. This course focuses on the mathematical analysis of various PDEs: from Poisson equation and variants, to non-symmetric equations (such as advection-diffusion problems) and vector-valued equations (such as linear elasticity).</div>
-            
-            <p> </p>
-            <p>I have also been the supervisor of:</p>
-            <div>[-] Lucas Le Gall, Paul-Émile Marcus, Ilan Ouzen, Simon Poirson (BsC Student). The course-project lasted from January 2025 to June 2025.</div>
-            <div>[-] Ethem Colak (MsC Student). The internship lasted from June 2024 to September 2024.</div>
+            <div class="lang-en">
+                <p>I am also a teaching assistant at École des Ponts ParisTech. I have given the following courses:</p>
+                <div>[-] Analysis of Partial Differential Equations , 34h, 24 students (first year ENPC), <a href="https://gede.enpc.fr/programme/Fiche.aspx?param=M:1ANCS" target="_blank">webpage</a>. This course introduces several theoretical tools (such as Banach spaces, Hilbert spaces, Lebesgue spaces, Notion of Measure Theory, Fourier Analysis, Fourier Transform, Notion of Distribution Theory, ...) to handle PDE.</div>
+                <div>[-] Partial Differential Equations: Variational and Energetical Approaches, 15h, 25 students (first year ENPC), <a href="http://cermics.enpc.fr/~legoll/edpef.html" target="_blank">webpage</a>. This course focuses on the mathematical analysis of various PDEs: from Poisson equation and variants, to non-symmetric equations (such as advection-diffusion problems) and vector-valued equations (such as linear elasticity).</div>
+
+                <p> </p>
+                <p>I have also been the supervisor of:</p>
+                <div>[-] Lucas Le Gall, Paul-Émile Marcus, Ilan Ouzen, Simon Poirson (BsC Student). The course-project lasted from January 2025 to June 2025.</div>
+                <div>[-] Ethem Colak (MsC Student). The internship lasted from June 2024 to September 2024.</div>
+            </div>
+
+            <div class="lang-fr">
+                <p>Je suis également chargé de TD à l'École des Ponts ParisTech. J'ai donné les cours suivants :</p>
+                <div>[-] Analyse des Équations aux Dérivées Partielles, 34h, 24 étudiants (première année ENPC), <a href="https://gede.enpc.fr/programme/Fiche.aspx?param=M:1ANCS" target="_blank">page web</a>. Ce cours introduit plusieurs outils théoriques (tels que les espaces de Banach, les espaces de Hilbert, les espaces de Lebesgue, les notions de théorie de la mesure, l'analyse de Fourier, la transformée de Fourier, les notions de théorie des distributions, ...) pour traiter les EDP.</div>
+                <div>[-] Équations aux Dérivées Partielles : Approches Variationnelles et Énergétiques, 15h, 25 étudiants (première année ENPC), <a href="http://cermics.enpc.fr/~legoll/edpef.html" target="_blank">page web</a>. Ce cours se concentre sur l'analyse mathématique de diverses EDP : de l'équation de Poisson et ses variantes, aux équations non symétriques (telles que les problèmes d'advection-diffusion) et aux équations vectorielles (telles que l'élasticité linéaire).</div>
+
+                <p> </p>
+                <p>J'ai également supervisé :</p>
+                <div>[-] Lucas Le Gall, Paul-Émile Marcus, Ilan Ouzen, Simon Poirson (étudiants en licence). Le projet de cours s'est déroulé de janvier 2025 à juin 2025.</div>
+                <div>[-] Ethem Colak (étudiant en master). Le stage s'est déroulé de juin 2024 à septembre 2024.</div>
+            </div>
         </section>
     </main>
     <footer>
@@ -89,5 +141,37 @@
         </a>
     </div>
 </footer>
+
+<script>
+    // Function to set the language
+    function setLanguage(lang) {
+        // Store the preference in localStorage
+        localStorage.setItem('preferredLanguage', lang);
+
+        // Update the HTML lang attribute
+        document.documentElement.lang = lang;
+
+        // Hide all language elements
+        document.querySelectorAll('.lang-en, .lang-fr').forEach(el => {
+            el.style.display = 'none';
+        });
+
+        // Show only the selected language
+        document.querySelectorAll('.lang-' + lang).forEach(el => {
+            el.style.display = '';
+        });
+
+        // Update button styles to show active language
+        document.getElementById('lang-fr-btn').style.fontWeight = (lang === 'fr') ? 'bold' : 'normal';
+        document.getElementById('lang-en-btn').style.fontWeight = (lang === 'en') ? 'bold' : 'normal';
+    }
+
+    // Initialize language on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get saved preference or default to French
+        const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
+        setLanguage(savedLang);
+    });
+</script>
 </body>
 </html>

@@ -12,6 +12,29 @@ header {
     color: #ffffff;
 }
 
+.language-switcher {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.language-switcher a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.language-switcher a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.language-switcher span {
+    color: #ffffff;
+    padding: 0 5px;
+}
+
 footer {
     background-color: #000000;
     color: #ffffff;
@@ -110,4 +133,9 @@ h2 {
 
 .icon-wrapper:hover {
     background-color: #f0f0f0; /* Changement de couleur au survol, par exemple un gris clair */
+}
+
+/* Language switcher - hide inactive languages */
+.lang-en, .lang-fr {
+    display: none;
 }
